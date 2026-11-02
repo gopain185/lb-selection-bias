@@ -7,6 +7,7 @@ the best public score selected.
 
 - Everything is synthetic, and the counts are drawn exactly from binomials. The notebook embeds the package source
   (`lb-selection-bias`, MIT) and reruns the full grid of 216 cells in a few seconds on a CPU.
-- The saved grid is the attached dataset (CC0). The last code cell checks that this run matches it.
+- The saved grid is the attached dataset (CC0). The last code cell checks that this run matches it. A different NumPy version draws different binomials, so
+  differences up to about 0.0002 are Monte Carlo noise, not a change in the method.
 - The pairwise flip rate, 2q(1 - q), is the share of rows on which two submissions disagree about correctness. You can
   measure it on your own out-of-fold predictions.
