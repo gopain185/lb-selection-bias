@@ -29,7 +29,7 @@ def build_dataset(public: bool) -> Path:
     (out / "dataset-metadata.json").write_text(json.dumps({
         "title": "Public LB Selection Bias Grid",
         "id": DATASET_ID,
-        "subtitle": "How far the best public score of N correlated submissions sits above its true score",
+        "subtitle": "How far the best public score of N similar submissions overstates its true score",
         "description": datasheet,
         "isPrivate": not public,
         "licenses": [{"name": "CC0-1.0"}],
