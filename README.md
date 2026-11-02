@@ -7,6 +7,10 @@ The best score was chosen by the public rows, though, so part of it is luck on t
 large that part is when the submissions are near-copies of one another, which is the usual case late in a
 competition.
 
+Related: my earlier `lb-shakeup-bench` measures what it costs to choose the final submission by public AUC, at
+Playground sizes. This repo asks a narrower question: how far the best public score sits above its true score, as a
+function of a flip rate you can measure on your own OOF predictions.
+
 ## Model
 
 - A test set has `n_public` public rows and `4 x n_public` private rows. A reference model is right on each row with
